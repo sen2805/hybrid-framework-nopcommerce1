@@ -1,2 +1,4 @@
-package reportConfig;public class MailConfig {
+package reportConfig;
+
+public class MailConfig {
 }

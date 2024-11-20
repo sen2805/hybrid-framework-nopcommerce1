@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hybrid-framework-nopcommerce.iml" filepath="$PROJECT_DIR$/hybrid-framework-nopcommerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
     </modules>
   </component>
 </project>

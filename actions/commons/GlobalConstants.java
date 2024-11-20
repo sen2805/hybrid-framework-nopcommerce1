@@ -1,2 +1,4 @@
-package commons;public class GlobalConstants {
+package commons;
+
+public class GlobalConstants {
 }

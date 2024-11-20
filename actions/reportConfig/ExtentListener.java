@@ -1,2 +1,4 @@
-package reportConfig;public class ExtentListener {
+package reportConfig;
+
+public class ExtentListener {
 }

@@ -1,2 +1,4 @@
-package utilities;public class PropertiesConfig {
+package utilities;
+
+public class PropertiesConfig {
 }

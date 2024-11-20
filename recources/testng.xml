@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="NopCommerce UI Automation" verbose="1" >
+    <test name="Run On Chrome" >
+        <classes>
+            <class name="com.nopcommerce.users.Level_03_Page_Object_Pattern" />
+        </classes>
+    </test>
+
+
+</suite>
