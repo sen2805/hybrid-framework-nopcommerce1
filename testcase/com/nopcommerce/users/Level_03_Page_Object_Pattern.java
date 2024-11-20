@@ -49,14 +49,14 @@ public class Level_03_Page_Object_Pattern  extends BaseTest {
 
     //Testcases
     @Test
-    public void User_01_Register() throws InterruptedException {
+    public void User_01_Register()  {
         // Action 1
         homePage.clickToRegisterLink();
         // HomePage qua Register page - RegisterPage được sinh ra và làm những action của page đó
         registerPage = new RegisterPageObject(driver);
         registerPage.clickToMaleRadio();
         registerPage.enterToFirstNameTextbox(firstName);
-        Thread.sleep(3000);
+
         registerPage.enterToLastNameTextbox(lastName);
         registerPage.enterToEmailTextbox(emailAddress);
         registerPage.enterToCompanyTextbox(companyName);
@@ -64,7 +64,7 @@ public class Level_03_Page_Object_Pattern  extends BaseTest {
         registerPage.enterToConfirmPasswordTextbox(password);
         registerPage.clickToRegisterButton();
         Assert.assertEquals(registerPage.getRegisterSuccessMessage(),"Your registration completed");
-       // registerPage.clickToLogoutLink();
+
         registerPage.clickToMyAccountLink();
 
 
@@ -75,9 +75,6 @@ public class Level_03_Page_Object_Pattern  extends BaseTest {
         Assert.assertTrue(customerInfoPage.isGenderMaleSelected());
         Assert.assertEquals(customerInfoPage.getFirstNameTextboxValue(),firstName);
         Assert.assertEquals(customerInfoPage.getLastNameTextboxValue(),lastName);
-    //    Assert.assertEquals(customerInfoPage.getDayDropdownSelectedValue(),day);
-      //  Assert.assertEquals(customerInfoPage.getMonthDropdownSelectedValue(),month);
-       // Assert.assertEquals(customerInfoPage.getYearDropdownSelectedValue(),year);
         Assert.assertEquals(customerInfoPage.getCompanyNameTextboxValue(),companyName);
         Assert.assertEquals(customerInfoPage.getEmailTextboxValue(),emailAddress);
          customerInfoPage.clickToLogOutLink();
