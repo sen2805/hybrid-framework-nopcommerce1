@@ -2,10 +2,13 @@ package com.nopcommerce.users;
 
 import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.CustomerInfoPageObject;
 import pageObjects.HomePageObject;
@@ -13,9 +16,8 @@ import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
 
 import java.time.Duration;
-import java.util.Random;
 
-public class Level_03_Page_Object_Pattern  extends BaseTest {
+public class Level_04_Multiple_Browser extends BaseTest {
     //Declare  Variable
     private WebDriver driver;
     private HomePageObject homePage;
@@ -24,13 +26,11 @@ public class Level_03_Page_Object_Pattern  extends BaseTest {
     private CustomerInfoPageObject customerInfoPage;
     private String firstName, lastName, day, month, year, emailAddress, companyName, password;
 
-
+    @Parameters("browser")
     //Pre-Condition
     @BeforeClass
-    public void beforeClass(){
-        driver = new FirefoxDriver();
-        driver.get("http://localhost/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+    public void beforeClass(String browserName){
+         driver =  getBrowserDriver(browserName);
          // Khởi tạo HomePage được sinh ra và bắt đầu làm những action của page đó
         homePage = new HomePageObject(driver);
         firstName = "Sen";
@@ -41,10 +41,6 @@ public class Level_03_Page_Object_Pattern  extends BaseTest {
         emailAddress = "sen" + generateRandomNumber() + "@gmail.com";
         password = "123456";
         companyName = "Klooon" ;
-
-
-
-
     }
 
     //Testcases

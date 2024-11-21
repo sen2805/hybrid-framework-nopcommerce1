@@ -4,35 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/CustomerInfoPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/CustomerInfoPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_01_Register_DRY.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/libraries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libraries.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="initial commit 1">
+      <change afterPath="$PROJECT_DIR$/actions/commons/BrowserList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_04_Multiple_Browser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/GlobalConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/GlobalConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/HomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/HomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/LoginPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/RegisterPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/RegisterPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/reportConfig/AllureListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/reportConfig/AllureListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/reportConfig/ExtentListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/reportConfig/ExtentListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/reportConfig/MailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/reportConfig/MailConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/utilities/ExcelConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/utilities/ExcelConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/utilities/JDBCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/utilities/JDBCConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/utilities/PropertiesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/utilities/PropertiesConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hybrid-framework-nopcommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hybrid-framework-nopcommerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/HomePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/HomePageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/LoginPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/LoginPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/RegisterPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/RegisterPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaTester/practice/EmployeeDRY.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaTester/practice/EmployeeRY.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_01_Register.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -88,6 +67,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Selenium2024\03-Java Hybrid Framework\hybrid-framework-nopcommerce\libraries" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nopcommerce.users" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.D:/Selenium2024/03-Java Hybrid Framework/hybrid-framework-nopcommerce/recources/testng.xml">
@@ -181,6 +163,23 @@
       <option name="presentableId" value="Default" />
       <updated>1730188767470</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1732090087494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732090087494</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit 1">
+      <option name="closed" value="true" />
+      <created>1732090271827</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732090271827</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +196,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="initial commit 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
