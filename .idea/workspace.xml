@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="initial commit 1">
-      <change afterPath="$PROJECT_DIR$/actions/commons/BrowserList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_04_Multiple_Browser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageFactory/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageFactory/CustomerInfoPageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageFactory/HomePageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageFactory/LoginPageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageFactory/RegisterPageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_05_PageFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,6 +71,7 @@
       <recent name="D:\Selenium2024\03-Java Hybrid Framework\hybrid-framework-nopcommerce\libraries" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageFactory" />
       <recent name="com.nopcommerce.users" />
     </key>
   </component>
@@ -204,7 +207,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/actions/commons/BasePage.java</url>
-          <line>302</line>
+          <line>307</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

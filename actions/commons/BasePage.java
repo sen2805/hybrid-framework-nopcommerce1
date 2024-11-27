@@ -13,6 +13,10 @@ import java.util.Set;
 
 public class BasePage {
 
+    public static commons.BasePage getBasePage(){
+        return new commons.BasePage();
+    }
+
     //Action: click/open/sendkeys/...> void
     public  void openPageURL(WebDriver driver, String pageURL){
         driver.get(pageURL);
@@ -131,15 +135,15 @@ public class BasePage {
 
 
     public void sendKeyToElement(WebDriver driver, String locator, String keyToSend){
+        getElement(driver,locator).clear();
         getElement(driver,locator).sendKeys(keyToSend);
     }
     public void selectItemInDropdown(WebDriver driver,String locator,String textItem ){
          new Select(getElement(driver,locator)).selectByVisibleText(textItem);
     }
     public String getSelectedItemInDropdown(WebDriver driver, String locator){
-        new Select(getElement(driver,locator)).getFirstSelectedOption().getText();
+        return new Select(getElement(driver,locator)).getFirstSelectedOption().getText();
 
-        return locator;
     }
 
     public boolean isDropdownMultiple(WebDriver driver,String locator){
