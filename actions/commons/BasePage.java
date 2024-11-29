@@ -6,6 +6,8 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageObjects.*;
+import pageUIs.*;
 
 import java.time.Duration;
 import java.util.List;
@@ -314,13 +316,52 @@ public class BasePage {
         new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.elementToBeSelected(getByXPath(locator)));
     }
 
+    public RewardPointPageObject openRewardPointPage(WebDriver driver) {
+        waitForElementClickable(driver, AddressPageUI.REWARD_POINT_LINK);
+        clickToElement(driver,AddressPageUI.REWARD_POINT_LINK);
+        return PageGenerator.getRewardPointPage(driver);
+    }
+
+    public CustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
+        waitForElementClickable(driver,AddressPageUI.CUSTOMER_INFO_LINK);
+        clickToElement(driver,AddressPageUI.CUSTOMER_INFO_LINK);
+        return PageGenerator.getCustomerPage(driver);
+    }
+
+
+    public AddressPageObject openAddressPage(WebDriver driver) {
+        waitForElementClickable(driver,BasePageUI.ADDRESS_LINK);
+        clickToElement(driver, BasePageUI.ADDRESS_LINK);
+        return PageGenerator.getAddressPage(driver);
+
+    }
 
 
 
+    public CustomerInfoPageObject openAccountPage(WebDriver driver) {
+        waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
+        clickToElement(driver,HomePageUI.MY_ACCOUNT_LINK);
+        return PageGenerator.getCustomerPage(driver);
+    }
 
+    public LoginPageObject openLoginPage(WebDriver driver) {
+        waitForElementVisible(driver,HomePageUI.LOGIN_BUTTON);
+        clickToElement(driver,HomePageUI.LOGIN_BUTTON);
+        return PageGenerator.getLoginPage(driver);
 
+    }
 
+    public CustomerInfoPageObject openCustomInfoPage(WebDriver driver) {
+        waitForElementVisible(driver,HomePageUI.MY_ACCOUNT_LINK);
+        clickToElement(driver,HomePageUI.MY_ACCOUNT_LINK);
+        return PageGenerator.getCustomerPage(driver);
+    }
 
+    public OrderPageObject openOrderPage(WebDriver driver) {
+        waitForElementClickable(driver, RewardPointPageUI.ORDER_LINK);
+        clickToElement(driver,RewardPointPageUI.ORDER_LINK);
+        return  PageGenerator.getOrderPage(driver);
+    }
 
 
 

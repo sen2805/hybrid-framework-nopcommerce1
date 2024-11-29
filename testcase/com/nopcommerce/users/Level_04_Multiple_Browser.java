@@ -2,9 +2,6 @@ package com.nopcommerce.users;
 
 import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -14,8 +11,6 @@ import pageObjects.CustomerInfoPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
-
-import java.time.Duration;
 
 public class Level_04_Multiple_Browser extends BaseTest {
     //Declare  Variable
@@ -47,7 +42,7 @@ public class Level_04_Multiple_Browser extends BaseTest {
     @Test
     public void User_01_Register()  {
         // Action 1
-        homePage.clickToRegisterLink();
+        homePage.openRegisterPage();
         // HomePage qua Register page - RegisterPage được sinh ra và làm những action của page đó
         registerPage = new RegisterPageObject(driver);
         registerPage.clickToMaleRadio();
@@ -59,7 +54,7 @@ public class Level_04_Multiple_Browser extends BaseTest {
         registerPage.enterToConfirmPasswordTextbox(password);
         registerPage.clickToRegisterButton();
         Assert.assertEquals(registerPage.getRegisterSuccessMessage(),"Your registration completed");
-        registerPage.clickToMyAccountLink();
+        registerPage.openCustomerInfoPage();
 
 
     }
@@ -77,7 +72,7 @@ public class Level_04_Multiple_Browser extends BaseTest {
     @Test
     public void User_03_Login(){
         homePage = new HomePageObject(driver);
-        homePage.clickToLoginButton();
+        homePage.openLoginPage(driver);
         loginPage = new LoginPageObject(driver);
         loginPage.enterToEmailTextbox(emailAddress);
         loginPage.enterToPasswordTextbox(password);

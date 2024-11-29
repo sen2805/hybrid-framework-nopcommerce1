@@ -7,12 +7,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.*;
 
-public class Level_06_PageGenerator_01 extends BaseTest {
+public class Level_06_PageGenerator_03 extends BaseTest {
     //Declare  Variable
     private WebDriver driver;
     private HomePageObject homePage;
@@ -25,9 +22,8 @@ public class Level_06_PageGenerator_01 extends BaseTest {
     //Pre-Condition
     @BeforeClass
     public void beforeClass(String browserName){
-         driver =  getBrowserDriver(browserName);
-         // Khởi tạo HomePage được sinh ra và bắt đầu làm những action của page đó
-        homePage = new HomePageObject(driver);
+        driver =  getBrowserDriver(browserName);
+        homePage = PageGenerator.getHomePage(driver);
         firstName = "Sen";
         lastName = "Pham";
         day = "22" ;
@@ -42,9 +38,7 @@ public class Level_06_PageGenerator_01 extends BaseTest {
     @Test
     public void User_01_Register()  {
         // Action 1
-        homePage.openRegisterPage();
-        // HomePage qua Register page - RegisterPage được sinh ra và làm những action của page đó
-        registerPage = new RegisterPageObject(driver);
+        registerPage = homePage.openRegisterPage();
         registerPage.clickToMaleRadio();
         registerPage.enterToFirstNameTextbox(firstName);
         registerPage.enterToLastNameTextbox(lastName);
@@ -69,15 +63,25 @@ public class Level_06_PageGenerator_01 extends BaseTest {
          customerInfoPage.clickToLogOutLink();
 
     }
-    @Test
+
     public void User_03_Login(){
-        homePage = new HomePageObject(driver);
-        homePage.openLoginPage(driver);
+       // homePage = new HomePageObject(driver);
+        loginPage = homePage.openLoginPage(driver);
         loginPage = new LoginPageObject(driver);
         loginPage.enterToEmailTextbox(emailAddress);
         loginPage.enterToPasswordTextbox(password);
         loginPage.clickToLoginButton();
         homePage = new HomePageObject(driver);
+        Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
+    }
+    @Test
+    public void User_04_Login(){
+
+        loginPage = homePage.openLoginPage(driver);
+        homePage = loginPage.loginToSystem(emailAddress,password);
+
+      //  homePage = new HomePageObject(driver);
+        PageGenerator.getHomePage(driver);
         Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
     }
 

@@ -42,7 +42,7 @@ public class Level_06_PageGenerator_02 extends BaseTest {
     @Test
     public void User_01_Register()  {
         // Action 1
-        registerPage = homePage.clickToRegisterLink();
+        registerPage = homePage.openRegisterPage();
         registerPage.clickToMaleRadio();
         registerPage.enterToFirstNameTextbox(firstName);
         registerPage.enterToLastNameTextbox(lastName);
@@ -52,7 +52,7 @@ public class Level_06_PageGenerator_02 extends BaseTest {
         registerPage.enterToConfirmPasswordTextbox(password);
         registerPage.clickToRegisterButton();
         Assert.assertEquals(registerPage.getRegisterSuccessMessage(),"Your registration completed");
-        registerPage.clickToMyAccountLink();
+        registerPage.openCustomerInfoPage();
 
 
     }
@@ -67,10 +67,11 @@ public class Level_06_PageGenerator_02 extends BaseTest {
          customerInfoPage.clickToLogOutLink();
 
     }
+
     @Test
     public void User_03_Login(){
        // homePage = new HomePageObject(driver);
-        loginPage = homePage.clickToLoginButton();
+        loginPage = homePage.openLoginPage(driver);
         loginPage = new LoginPageObject(driver);
         loginPage.enterToEmailTextbox(emailAddress);
         loginPage.enterToPasswordTextbox(password);

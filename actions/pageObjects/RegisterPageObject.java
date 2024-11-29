@@ -5,11 +5,12 @@ import org.openqa.selenium.WebDriver;
 import pageUIs.RegisterPageUI;
 
 public class RegisterPageObject extends BasePage {
+    private WebDriver driver;
     public RegisterPageObject(WebDriver driver) {
         this.driver = driver;
     }
 
-    private WebDriver driver;
+
     public void clickToMaleRadio() {
          waitForElementVisible(driver, RegisterPageUI.GENDER_MALE_RADIO);
          checkToCheckboxRadio(driver,RegisterPageUI.GENDER_MALE_RADIO);
@@ -23,23 +24,6 @@ public class RegisterPageObject extends BasePage {
     public void enterToLastNameTextbox(String lastName) {
        waitForElementVisible(driver,RegisterPageUI.LAST_NAME_TEXTBOX);
         sendKeyToElement(driver,RegisterPageUI.LAST_NAME_TEXTBOX,lastName);
-    }
-
-    public void selectDayDropdown(String day) {
-        waitForElementClickable(driver,RegisterPageUI.DAY_DROPDOWN);
-        selectItemInDropdown(driver,RegisterPageUI.DAY_DROPDOWN,day);
-
-    }
-
-    public void selectMonthDropdown(String month) {
-        waitForElementClickable(driver,RegisterPageUI.MONTH_DROPDOWN);
-        selectItemInDropdown(driver,RegisterPageUI.MONTH_DROPDOWN,month);
-
-    }
-
-    public void selectYearDropdown(String year) {
-        waitForElementClickable(driver,RegisterPageUI.YEAR_DROPDOWN);
-        selectItemInDropdown(driver,RegisterPageUI.YEAR_DROPDOWN,year);
     }
 
     public void enterToEmailTextbox(String emailAddress) {
@@ -74,9 +58,17 @@ public class RegisterPageObject extends BasePage {
     }
 
 
-    public void clickToMyAccountLink() {
+    public void openCustomerInfoPage() {
         waitForElementVisible(driver,RegisterPageUI.MY_ACCOUNT_LINK);
         clickToElement(driver,RegisterPageUI.MY_ACCOUNT_LINK);
 
     }
+
+    public HomePageObject logOutSystem() {
+        waitForElementClickable(driver,RegisterPageUI.LOGOUT_LINK);
+        clickToElement(driver,RegisterPageUI.LOGOUT_LINK);
+        return PageGenerator.getHomePage(driver);
+    }
+
+
 }

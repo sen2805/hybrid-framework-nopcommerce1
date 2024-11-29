@@ -13,7 +13,6 @@ import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
 
 import java.time.Duration;
-import java.util.Random;
 
 public class Level_03_Page_Object_Pattern  extends BaseTest {
     //Declare  Variable
@@ -51,7 +50,7 @@ public class Level_03_Page_Object_Pattern  extends BaseTest {
     @Test
     public void User_01_Register()  {
         // Action 1
-        homePage.clickToRegisterLink();
+        homePage.openRegisterPage();
         // HomePage qua Register page - RegisterPage được sinh ra và làm những action của page đó
         registerPage = new RegisterPageObject(driver);
         registerPage.clickToMaleRadio();
@@ -63,7 +62,7 @@ public class Level_03_Page_Object_Pattern  extends BaseTest {
         registerPage.enterToConfirmPasswordTextbox(password);
         registerPage.clickToRegisterButton();
         Assert.assertEquals(registerPage.getRegisterSuccessMessage(),"Your registration completed");
-        registerPage.clickToMyAccountLink();
+        registerPage.openCustomerInfoPage();
 
 
     }
@@ -81,7 +80,7 @@ public class Level_03_Page_Object_Pattern  extends BaseTest {
     @Test
     public void User_03_Login(){
         homePage = new HomePageObject(driver);
-        homePage.clickToLoginButton();
+        homePage.openLoginPage(driver);
         loginPage = new LoginPageObject(driver);
         loginPage.enterToEmailTextbox(emailAddress);
         loginPage.enterToPasswordTextbox(password);

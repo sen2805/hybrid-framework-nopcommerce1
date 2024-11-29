@@ -28,20 +28,7 @@ public class CustomerInfoPageObject extends BasePage {
         return getElementAttribute(driver,CustomerInfoPageUI.LAST_NAME_TEXTBOX,"value");
     }
 
-    public String getDayDropdownSelectedValue() {
-           waitForElementClickable(driver,CustomerInfoPageUI.DAY_DROPDOWN);
-           return getSelectedItemInDropdown(driver,CustomerInfoPageUI.DAY_DROPDOWN);
-    }
 
-    public String getMonthDropdownSelectedValue() {
-        waitForElementClickable(driver,CustomerInfoPageUI.MONTH_DROPDOWN);
-        return getSelectedItemInDropdown(driver,CustomerInfoPageUI.MONTH_DROPDOWN);
-    }
-
-    public String getYearDropdownSelectedValue() {
-        waitForElementClickable(driver,CustomerInfoPageUI.MONTH_DROPDOWN);
-        return getSelectedItemInDropdown(driver,CustomerInfoPageUI.MONTH_DROPDOWN);
-    }
     public String getEmailTextboxValue() {
         waitForElementVisible(driver,CustomerInfoPageUI.EMAIL_TEXTBOX);
         return getElementAttribute(driver,CustomerInfoPageUI.EMAIL_TEXTBOX,"value");
