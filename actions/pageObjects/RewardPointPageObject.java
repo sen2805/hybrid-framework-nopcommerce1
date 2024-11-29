@@ -4,9 +4,11 @@ import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import pageUIs.RewardPointPageUI;
 
-public class RewardPointPageObject extends BasePage {
+public class RewardPointPageObject extends SidebarPageObject{
     private WebDriver driver;
+
     public RewardPointPageObject(WebDriver driver) {
+        super(driver);
         this.driver = driver;
     }
 

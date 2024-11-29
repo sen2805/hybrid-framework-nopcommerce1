@@ -4,13 +4,12 @@ import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import pageUIs.CustomerInfoPageUI;
 
-public class CustomerInfoPageObject extends BasePage {
+public class CustomerInfoPageObject extends SidebarPageObject {
     private WebDriver driver;
     public CustomerInfoPageObject(WebDriver driver) {
+        super(driver);
         this.driver = driver;
     }
-
-
 
     public boolean isGenderMaleSelected() {
         waitForElementSelected(driver, CustomerInfoPageUI.GENDER_MALE_RADIO);

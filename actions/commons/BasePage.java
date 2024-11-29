@@ -316,25 +316,6 @@ public class BasePage {
         new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.elementToBeSelected(getByXPath(locator)));
     }
 
-    public RewardPointPageObject openRewardPointPage(WebDriver driver) {
-        waitForElementClickable(driver, AddressPageUI.REWARD_POINT_LINK);
-        clickToElement(driver,AddressPageUI.REWARD_POINT_LINK);
-        return PageGenerator.getRewardPointPage(driver);
-    }
-
-    public CustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
-        waitForElementClickable(driver,AddressPageUI.CUSTOMER_INFO_LINK);
-        clickToElement(driver,AddressPageUI.CUSTOMER_INFO_LINK);
-        return PageGenerator.getCustomerPage(driver);
-    }
-
-
-    public AddressPageObject openAddressPage(WebDriver driver) {
-        waitForElementClickable(driver,BasePageUI.ADDRESS_LINK);
-        clickToElement(driver, BasePageUI.ADDRESS_LINK);
-        return PageGenerator.getAddressPage(driver);
-
-    }
 
 
 
@@ -356,12 +337,33 @@ public class BasePage {
         clickToElement(driver,HomePageUI.MY_ACCOUNT_LINK);
         return PageGenerator.getCustomerPage(driver);
     }
+    public RewardPointPageObject openRewardPointPage(WebDriver driver) {
+        waitForElementClickable(driver, SideBarPageUI.REWARD_POINT_LINK);
+        clickToElement(driver,SideBarPageUI.REWARD_POINT_LINK);
+        return PageGenerator.getRewardPointPage(driver);
+    }
+
+    public CustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
+        waitForElementClickable(driver,SideBarPageUI.CUSTOMER_INFO_LINK);
+        clickToElement(driver,SideBarPageUI.CUSTOMER_INFO_LINK);
+        return PageGenerator.getCustomerPage(driver);
+    }
+
+
+    public AddressPageObject openAddressPage(WebDriver driver) {
+        waitForElementClickable(driver, SideBarPageUI.ADDRESS_LINK);
+        clickToElement(driver, SideBarPageUI.ADDRESS_LINK);
+        return PageGenerator.getAddressPage(driver);
+
+    }
 
     public OrderPageObject openOrderPage(WebDriver driver) {
-        waitForElementClickable(driver, RewardPointPageUI.ORDER_LINK);
-        clickToElement(driver,RewardPointPageUI.ORDER_LINK);
+        waitForElementClickable(driver, SideBarPageUI.ORDER_LINK);
+        clickToElement(driver,SideBarPageUI.ORDER_LINK);
         return  PageGenerator.getOrderPage(driver);
     }
+
+
 
 
 

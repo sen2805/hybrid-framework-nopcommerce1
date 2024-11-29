@@ -9,16 +9,18 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.*;
 
-public class Level_07_Switch_Page_Object extends BaseTest {
+public class Level_08_Page_Navigation extends BaseTest {
     //Declare  Variable
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
     private LoginPageObject loginPage;
+
     private CustomerInfoPageObject customerInfoPage;
     private AddressPageObject addressPage;
     private OrderPageObject orderPage;
     private RewardPointPageObject rewardPointPage;
+
     private String firstName, lastName, day, month, year, emailAddress, companyName, password;
 
     @Parameters("browser")
@@ -41,6 +43,7 @@ public class Level_07_Switch_Page_Object extends BaseTest {
     @Test
     public void User_01_Register()  {
         // Action 1
+
         registerPage = homePage.openRegisterPage();
         registerPage.clickToMaleRadio();
         registerPage.enterToFirstNameTextbox(firstName);
@@ -74,19 +77,19 @@ public class Level_07_Switch_Page_Object extends BaseTest {
     @Test
     public void User_04_Switch_Page(){
         //Customer Infor -> Address
-         addressPage = customerInfoPage.openAddressPage(driver);
+         addressPage = customerInfoPage.openAddressPage();
 
         //Address ->Reward Point
-        rewardPointPage = addressPage.openRewardPointPage(driver);
+        rewardPointPage = addressPage.openRewardPointPage();
 
         //Reward Point -> OrderPage
-         orderPage = rewardPointPage.openOrderPage(driver);
+         orderPage = rewardPointPage.openOrderPage();
 
         //Order -> Address
-          addressPage = orderPage.openAddressPage(driver);
+          addressPage = orderPage.openAddressPage();
 
         //Address -> Customer Info
-         customerInfoPage = addressPage.openCustomerInfoPage(driver);
+         customerInfoPage = addressPage.openCustomerInfoPage();
     }
     //Post-Condition
     @AfterClass
