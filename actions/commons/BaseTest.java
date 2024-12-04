@@ -2,6 +2,7 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -28,6 +29,19 @@ public class BaseTest {
                 throw new RuntimeException("Browser name is not valid");
         }
         driver.get("http://localhost/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        return driver;
+    }
+
+    protected WebDriver getBrowserDriver1(String browserName){
+        driver = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--user-data-dir=C:/Users/admin/AppData/Local/Google/Chrome/User Data/");
+        chromeOptions.addArguments("--profile-directory=Profile 3");
+        driver = new ChromeDriver(chromeOptions);
+
+
+        driver.get("https://demo.nopcommerce.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         return driver;
     }
