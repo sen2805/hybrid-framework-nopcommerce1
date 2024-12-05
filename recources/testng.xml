@@ -2,10 +2,11 @@
 
 <suite name="NopCommerce UI Automation" verbose="1" >
 
-    <test name="Run On Firefox browser" >
-        <parameter name="browser" value="firefox"></parameter>
+    <test name="Run On EDGE and Chrome browser" >
+        <parameter name="browser" value="Edge"></parameter>
+
         <classes>
-            <class name="com.nopcommerce.users.Level_08_Page_Navigation" />
+            <class name="com.nopcommerce.users.Level_04_Multiple_Browser" />
         </classes>
     </test>
 

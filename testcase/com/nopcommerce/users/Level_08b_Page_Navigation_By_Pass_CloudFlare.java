@@ -2,46 +2,32 @@ package com.nopcommerce.users;
 
 import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.*;
 
-import java.time.Duration;
-
-public class Level_04b_ByPass_CloudFlare extends BaseTest {
+public class Level_08b_Page_Navigation_By_Pass_CloudFlare extends BaseTest {
     //Declare  Variable
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
     private LoginPageObject loginPage;
+
     private CustomerInfoPageObject customerInfoPage;
+    private AddressPageObject addressPage;
+    private OrderPageObject orderPage;
+    private RewardPointPageObject rewardPointPage;
+
     private String firstName, lastName, day, month, year, emailAddress, companyName, password;
 
     @Parameters("browser")
-    //Pre-Condition
     @BeforeClass
     public void beforeClass(String browserName){
-
-        driver = new ChromeDriver();
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--user-data-dir=C:/Users/admin/AppData/Local/Google/Chrome/User Data/");
-        chromeOptions.addArguments("--profile-directory=Profile 3");
-        driver = new ChromeDriver(chromeOptions);
-
-
-        driver.get("https://demo.nopcommerce.com/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
-         // Khởi tạo HomePage được sinh ra và bắt đầu làm những action của page đó
-        homePage = new HomePageObject(driver);
+        driver =  getBrowserDriver(browserName);
+        homePage = PageGenerator.getHomePage(driver);
         firstName = "Sen";
         lastName = "Pham";
         day = "22" ;
@@ -49,16 +35,15 @@ public class Level_04b_ByPass_CloudFlare extends BaseTest {
         year = "2024";
         emailAddress = "sen" + generateRandomNumber() + "@gmail.com";
         password = "123456";
-        companyName = "Klooon" ;
+        companyName = "Kloon" ;
     }
 
     //Testcases
     @Test
     public void User_01_Register()  {
         // Action 1
-        homePage.openRegisterPage();
-        // HomePage qua Register page - RegisterPage được sinh ra và làm những action của page đó
-        registerPage = new RegisterPageObject(driver);
+
+        registerPage = homePage.openRegisterPage();
         registerPage.clickToMaleRadio();
         registerPage.enterToFirstNameTextbox(firstName);
         registerPage.enterToLastNameTextbox(lastName);
@@ -69,36 +54,47 @@ public class Level_04b_ByPass_CloudFlare extends BaseTest {
         registerPage.clickToRegisterButton();
         Assert.assertEquals(registerPage.getRegisterSuccessMessage(),"Your registration completed");
         registerPage.openCustomerInfoPage();
+        registerPage.logOutSystem();
+    }
 
-
+    @Test
+    public void User_02_Login(){
+        loginPage = homePage.openLoginPage(driver);
+        homePage = loginPage.loginToSystem(emailAddress,password);
+        PageGenerator.getHomePage(driver);
+        Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
     }
     @Test
-    public  void User_02_MyAccount(){
-        customerInfoPage = new CustomerInfoPageObject(driver);
+    public  void User_03_MyAccount(){
+        customerInfoPage = homePage.openCustomInfoPage(driver);
         Assert.assertTrue(customerInfoPage.isGenderMaleSelected());
         Assert.assertEquals(customerInfoPage.getFirstNameTextboxValue(),firstName);
         Assert.assertEquals(customerInfoPage.getLastNameTextboxValue(),lastName);
         Assert.assertEquals(customerInfoPage.getCompanyNameTextboxValue(),companyName);
         Assert.assertEquals(customerInfoPage.getEmailTextboxValue(),emailAddress);
-         customerInfoPage.clickToLogOutLink();
-
     }
     @Test
-    public void User_03_Login(){
-        homePage = new HomePageObject(driver);
-        homePage.openLoginPage(driver);
-        loginPage = new LoginPageObject(driver);
-        loginPage.enterToEmailTextbox(emailAddress);
-        loginPage.enterToPasswordTextbox(password);
-        loginPage.clickToLoginButton();
-        homePage = new HomePageObject(driver);
-        Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
-    }
+    public void User_04_Switch_Page(){
+        //Customer Infor -> Address
+         addressPage = customerInfoPage.openAddressPage();
 
+        //Address ->Reward Point
+        rewardPointPage = addressPage.openRewardPointPage();
+
+        //Reward Point -> OrderPage
+         orderPage = rewardPointPage.openOrderPage();
+
+        //Order -> Address
+          addressPage = orderPage.openAddressPage();
+
+        //Address -> Customer Info
+         customerInfoPage = addressPage.openCustomerInfoPage();
+    }
     //Post-Condition
     @AfterClass
     public void afterClass(){
         driver.quit();
+
     }
 
 
