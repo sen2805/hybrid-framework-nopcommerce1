@@ -20,7 +20,7 @@ public class Level_05_PageFactory extends BaseTest {
     private RegisterPageFactory registerPage;
     private LoginPageFactory loginPage;
     private CustomerInfoPageFactory customerInfoPage;
-    private String firstName, lastName, day, month, year, emailAddress, companyName, password;
+    private String firstName, lastName, emailAddress, companyName, password;
 
     @Parameters("browser")
     //Pre-Condition
@@ -31,9 +31,6 @@ public class Level_05_PageFactory extends BaseTest {
         homePage = new HomePageFactory(driver);
         firstName = "Sen";
         lastName = "Pham";
-        day = "22" ;
-        month = "September";
-        year = "2024";
         emailAddress = "sen" + generateRandomNumber() + "@gmail.com";
         password = "123456";
         companyName = "Klooon" ;

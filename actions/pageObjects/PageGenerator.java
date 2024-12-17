@@ -1,33 +1,40 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v85.page.Page;
+import pageObjects.admin.AdminDashboardPO;
+import pageObjects.admin.AdminLoginPO;
+import pageObjects.users.*;
 
 public class PageGenerator {
-    public static  HomePageObject getHomePage(WebDriver driver){
-        return new HomePageObject(driver);
+    public static UserHomePageObject getUserHomePage(WebDriver driver){
+        return new UserHomePageObject(driver);
     }
 
-    public static  LoginPageObject getLoginPage(WebDriver driver){
-        return new LoginPageObject(driver);
+    public static UserLoginPageObject getUserLoginPage(WebDriver driver){
+        return new UserLoginPageObject(driver);
     }
 
-    public static  RegisterPageObject getRegisterPage(WebDriver driver){
-        return new RegisterPageObject(driver);
+    public static UserRegisterPageObject getUserRegisterPage(WebDriver driver){
+        return new UserRegisterPageObject(driver);
     }
 
-    public static  CustomerInfoPageObject getCustomerPage(WebDriver driver){
-        return  new CustomerInfoPageObject(driver);
+    public static UserCustomerInfoPageObject getUserCustomerPage(WebDriver driver){
+        return  new UserCustomerInfoPageObject(driver);
     }
-    public static  AddressPageObject getAddressPage(WebDriver driver){
-        return new AddressPageObject(driver);
+    public static UserAddressPageObject getUserAddressPage(WebDriver driver){
+        return new UserAddressPageObject(driver);
     }
-    public static  OrderPageObject getOrderPage(WebDriver driver){
-        return new OrderPageObject(driver);
+    public static UserOrderPageObject getUserOrderPage(WebDriver driver){
+        return new UserOrderPageObject(driver);
     }
-    public static  RewardPointPageObject getRewardPointPage(WebDriver driver){
-        return new RewardPointPageObject(driver);
+    public static UserRewardPointPageObject getUserRewardPointPage(WebDriver driver){
+        return new UserRewardPointPageObject(driver);
+    }
+    public static AdminDashboardPO getAdminDashboardPage(WebDriver driver){
+        return  new AdminDashboardPO(driver);
+    }
+    public static AdminLoginPO getAdminLoginPage(WebDriver driver){
+        return  new AdminLoginPO(driver);
     }
 
 

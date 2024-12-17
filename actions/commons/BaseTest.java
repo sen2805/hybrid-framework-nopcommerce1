@@ -13,53 +13,42 @@ import java.util.Random;
 public class BaseTest {
 
     private WebDriver driver;
-    protected void initBrowser(){
-      //  ChromeOptions chromeOptions = new ChromeOptions();
-       //  chromeOptions.addArguments("--user-data-dir=C:/Users/admin/AppData/Local/Google/Chrome/User Data/");
-      //  chromeOptions.addArguments("--profile-directory=Profile 3");
-      //  driver = new ChromeDriver(chromeOptions);
 
-         EdgeOptions edgeOptions = new EdgeOptions();
-        edgeOptions.addArguments("--user-data-dir = C:/Users/admin/AppData/Local/Microsoft/Edge/User Data/");
-        edgeOptions.addArguments("--profile-directory=Profile 9");
-        driver = new EdgeDriver(edgeOptions);
-
-    }
 
     protected WebDriver getBrowserDriver(String browserName){
-        initBrowser();
+
         BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
         switch (browserList){
             case EDGE:
                 driver = new EdgeDriver();
                 break;
+            case FIREFOX:
+                driver = new FirefoxDriver();
+                break;
             default:
                 throw new RuntimeException("Browser name is not valid");
         }
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get("http://localhost/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         return driver;
     }
+    protected WebDriver getBrowserDriver(String browserName,String url){
 
-
-    protected WebDriver getBrowserDriver1111(String browserName){
-        initBrowser();
         BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
         switch (browserList){
             case EDGE:
                 driver = new EdgeDriver();
                 break;
-            case CHROME:
-                driver = new ChromeDriver();
+            case FIREFOX:
+                driver = new FirefoxDriver();
                 break;
             default:
                 throw new RuntimeException("Browser name is not valid");
         }
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get(url);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         return driver;
     }
-
 
 
     protected int generateRandomNumber(){

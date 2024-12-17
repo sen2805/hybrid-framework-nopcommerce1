@@ -8,17 +8,18 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.*;
+import pageObjects.users.*;
 
 public class Level_07_Switch_Page_Object extends BaseTest {
     //Declare  Variable
     private WebDriver driver;
-    private HomePageObject homePage;
-    private RegisterPageObject registerPage;
-    private LoginPageObject loginPage;
-    private CustomerInfoPageObject customerInfoPage;
-    private AddressPageObject addressPage;
-    private OrderPageObject orderPage;
-    private RewardPointPageObject rewardPointPage;
+    private UserHomePageObject homePage;
+    private UserRegisterPageObject registerPage;
+    private UserLoginPageObject loginPage;
+    private UserCustomerInfoPageObject customerInfoPage;
+    private UserAddressPageObject addressPage;
+    private UserOrderPageObject orderPage;
+    private UserRewardPointPageObject rewardPointPage;
     private String firstName, lastName, day, month, year, emailAddress, companyName, password;
 
     @Parameters("browser")
@@ -26,7 +27,7 @@ public class Level_07_Switch_Page_Object extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName){
         driver =  getBrowserDriver(browserName);
-        homePage = PageGenerator.getHomePage(driver);
+        homePage = PageGenerator.getUserHomePage(driver);
         firstName = "Sen";
         lastName = "Pham";
         day = "22" ;
@@ -59,7 +60,7 @@ public class Level_07_Switch_Page_Object extends BaseTest {
     public void User_02_Login(){
         loginPage = homePage.openLoginPage(driver);
         homePage = loginPage.loginToSystem(emailAddress,password);
-        PageGenerator.getHomePage(driver);
+        PageGenerator.getUserHomePage(driver);
         Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
     }
     @Test

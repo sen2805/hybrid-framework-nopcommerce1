@@ -7,19 +7,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.users.UserCustomerInfoPageObject;
+import pageObjects.users.UserHomePageObject;
+import pageObjects.users.UserLoginPageObject;
+import pageObjects.users.UserRegisterPageObject;
 
 public class Level_06_PageGenerator_02 extends BaseTest {
     //Declare  Variable
     private WebDriver driver;
-    private HomePageObject homePage;
-    private RegisterPageObject registerPage;
-    private LoginPageObject loginPage;
-    private CustomerInfoPageObject customerInfoPage;
-    private String firstName, lastName, day, month, year, emailAddress, companyName, password;
+    private UserHomePageObject homePage;
+    private UserRegisterPageObject registerPage;
+    private UserLoginPageObject loginPage;
+    private UserCustomerInfoPageObject customerInfoPage;
+    private String firstName, lastName, emailAddress, companyName, password;
 
     @Parameters("browser")
     //Pre-Condition
@@ -27,12 +27,9 @@ public class Level_06_PageGenerator_02 extends BaseTest {
     public void beforeClass(String browserName){
          driver =  getBrowserDriver(browserName);
          // Khởi tạo HomePage được sinh ra và bắt đầu làm những action của page đó
-        homePage = new HomePageObject(driver);
+        homePage = new UserHomePageObject(driver);
         firstName = "Sen";
         lastName = "Pham";
-        day = "22" ;
-        month = "September";
-        year = "2024";
         emailAddress = "sen" + generateRandomNumber() + "@gmail.com";
         password = "123456";
         companyName = "Klooon" ;
@@ -58,7 +55,7 @@ public class Level_06_PageGenerator_02 extends BaseTest {
     }
     @Test
     public  void User_02_MyAccount(){
-        customerInfoPage = new CustomerInfoPageObject(driver);
+        customerInfoPage = new UserCustomerInfoPageObject(driver);
         Assert.assertTrue(customerInfoPage.isGenderMaleSelected());
         Assert.assertEquals(customerInfoPage.getFirstNameTextboxValue(),firstName);
         Assert.assertEquals(customerInfoPage.getLastNameTextboxValue(),lastName);
@@ -72,11 +69,11 @@ public class Level_06_PageGenerator_02 extends BaseTest {
     public void User_03_Login(){
        // homePage = new HomePageObject(driver);
         loginPage = homePage.openLoginPage(driver);
-        loginPage = new LoginPageObject(driver);
+        loginPage = new UserLoginPageObject(driver);
         loginPage.enterToEmailTextbox(emailAddress);
         loginPage.enterToPasswordTextbox(password);
         loginPage.clickToLoginButton();
-        homePage = new HomePageObject(driver);
+        homePage = new UserHomePageObject(driver);
         Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
     }
 
