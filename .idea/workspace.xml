@@ -4,47 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="initial commit 1">
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/admin/AdminDashboardPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/admin/AdminLoginPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/admin/AdminDashboardPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/admin/AdminLoginPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_09b_Check_URL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageFactory/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageFactory/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageFactory/CustomerInfoPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageFactory/CustomerInfoPageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/AddressPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserAddressPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/CustomerInfoPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserCustomerInfoPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/HomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserHomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserLoginPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/OrderPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserOrderPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/PageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/PageGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/RegisterPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserRegisterPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/RewardPointPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserRewardPointPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/SidebarPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserSidebarPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/AddressPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserAddressPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/CustomerInfoPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserCustomerInfoPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/HomePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserHomePageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/LoginPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserLoginPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/OrderPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserOrderPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/RegisterPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserRegisterPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/RewardPointPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserRewardPointPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/SideBarPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserSideBarPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_04_Multiple_Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_04_Multiple_Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_05_PageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_05_PageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_05a_ByPassCloudFlare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_03.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_07_Switch_Page_Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_07_Switch_Page_Object.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_08_Page_Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_08_Page_Navigation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_08b_Page_Navigation_By_Pass_CloudFlare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_09_Switch_URL.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_09_Switch_Site_URL.java" afterDir="false" />
-    </list>
+    <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="Topic 75 Switch URL" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732090271827</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Topic 75 Switch URL">
+      <option name="closed" value="true" />
+      <created>1734423810930</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734423810931</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,7 +220,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="initial commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit 1" />
+    <MESSAGE value="Topic 75 Switch URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Topic 75 Switch URL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
