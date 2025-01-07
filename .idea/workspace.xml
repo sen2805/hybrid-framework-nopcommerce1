@@ -4,7 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="Topic 75 Switch URL" />
+    <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="Topic 75 Switch URL">
+      <change afterPath="$PROJECT_DIR$/actions/jquery/HomePO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/jquery/PageGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/jquery/HomePageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/admin/AdminLoginPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserCustomerInfoPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserHomePageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserLoginPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserRegisterPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserSideBarPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recources/nopCommerce.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recources/uploadFile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_10_Dynamic_Locator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/jquery/cases/Level_11_DataTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/jquery/cases/Level_12_UploadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/commons/GlobalConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/GlobalConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/PageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/PageGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/admin/AdminDashboardPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/admin/AdminDashboardPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/admin/AdminLoginPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/admin/AdminLoginPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserAddressPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserAddressPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserCustomerInfoPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserCustomerInfoPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserHomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserHomePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserLoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserLoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserOrderPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserOrderPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserRegisterPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserRegisterPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserRewardPointPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserRewardPointPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserSidebarPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserSidebarPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/BasePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/BasePageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/admin/AdminDashboardPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/admin/AdminDashboardPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/admin/AdminLoginPageUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/users/UserAddressPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserAddressPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/users/UserCustomerInfoPageUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/users/UserHomePageUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/users/UserLoginPageUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/users/UserOrderPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserOrderPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/users/UserRegisterPageUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/users/UserRewardPointPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserRewardPointPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/users/UserSideBarPageUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recources/dataTable.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_03_Page_Object_Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_04_Multiple_Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_04_Multiple_Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_03.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_06_PageGenerator_03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_07_Switch_Page_Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_07_Switch_Page_Object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_08_Page_Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_08_Page_Navigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_09_Switch_Site_URL.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_09_Switch_Site_URL.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,50 +106,53 @@
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/dataTable.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/uploadFile.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.D:/Selenium2024/03-Java Hybrid Framework/hybrid-framework-nopcommerce/recources/testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Level_01_Register.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Level_01_Register_DRY.Register_01_Register_Empty_Data.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Level_01_Register_DRY.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Level_03_Page_Object_Pattern.User_01_Register.executor&quot;: &quot;Debug&quot;,
     &quot;TestNG.Level_08_Page_Navigation.User_04_Switch_Page.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.Level_08_Page_Navigation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Level_09_Switch_Site_URL.Role_01_User_Site_To_Admin_Site.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Level_09_Switch_Site_URL.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Level_10_Dynamic_Locator.User_04_Dynamic_Page.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Level_11_DataTable.Table_04_Action_By_Index.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Level_11_DataTable.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;java.suggest.annotation.dependency&quot;: &quot;false&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Selenium2024/03-Java Hybrid Framework/hybrid-framework-nopcommerce/libraries&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.2046875&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\recources" />
       <recent name="D:\Selenium2024\03-Java Hybrid Framework\hybrid-framework-nopcommerce\libraries" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\.idea" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\datatest" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\browserLogs" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\browserExtensions" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jquery.cases" />
+      <recent name="com.nopcommerce.users" />
       <recent name="pageObjects.admin" />
       <recent name="pageFactory" />
-      <recent name="com.nopcommerce.users" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Selenium2024/03-Java Hybrid Framework/hybrid-framework-nopcommerce/recources/testng.xml">
-    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.User" />
+  <component name="RunManager" selected="TestNG.C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/uploadFile.xml">
+    <configuration name="C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/dataTable.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hybrid-framework-nopcommerce" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="D:/Selenium2024/03-Java Hybrid Framework/hybrid-framework-nopcommerce/recources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hybrid-framework-nopcommerce" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/recources/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/recources/dataTable.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -107,16 +160,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Level_01_Register_DRY" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/uploadFile.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hybrid-framework-nopcommerce" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/recources/uploadFile.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Level_08_Page_Navigation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hybrid-framework-nopcommerce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nopcommerce.users.*" />
+          <option name="PATTERN" value="jquery.cases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.nopcommerce.users" />
-      <option name="MAIN_CLASS_NAME" value="com.nopcommerce.users.Level_01_Register_DRY" />
+      <option name="MAIN_CLASS_NAME" value="com.nopcommerce.users.Level_08_Page_Navigation" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -124,35 +187,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Level_01_Register_DRY.Register_01_Register_Empty_Data" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Level_11_DataTable" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hybrid-framework-nopcommerce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nopcommerce.users.*" />
+          <option name="PATTERN" value="jquery.cases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.nopcommerce.users" />
-      <option name="MAIN_CLASS_NAME" value="com.nopcommerce.users.Level_01_Register_DRY" />
-      <option name="METHOD_NAME" value="Register_01_Register_Empty_Data" />
+      <option name="MAIN_CLASS_NAME" value="jquery.cases.Level_11_DataTable" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Level_11_DataTable.Table_04_Action_By_Index" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hybrid-framework-nopcommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jquery.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nopcommerce.users" />
+      <option name="MAIN_CLASS_NAME" value="jquery.cases.Level_11_DataTable" />
+      <option name="METHOD_NAME" value="Table_04_Action_By_Index" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Level_09_Switch_Site_URL" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hybrid-framework-nopcommerce" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nopcommerce.users.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nopcommerce.users" />
-      <option name="MAIN_CLASS_NAME" value="com.nopcommerce.users.Level_09_Switch_Site_URL" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -161,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/Selenium2024/03-Java Hybrid Framework/hybrid-framework-nopcommerce/recources/testng.xml" />
-        <item itemvalue="TestNG.Level_09_Switch_Site_URL" />
-        <item itemvalue="TestNG.Level_01_Register_DRY" />
-        <item itemvalue="TestNG.Level_01_Register_DRY.Register_01_Register_Empty_Data" />
-        <item itemvalue="Application.User" />
+        <item itemvalue="TestNG.C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/uploadFile.xml" />
+        <item itemvalue="TestNG.C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/dataTable.xml" />
+        <item itemvalue="TestNG.Level_11_DataTable.Table_04_Action_By_Index" />
+        <item itemvalue="TestNG.Level_11_DataTable" />
+        <item itemvalue="TestNG.Level_08_Page_Navigation" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734423810931</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Topic 75 Switch URL">
+      <option name="closed" value="true" />
+      <created>1734423864639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734423864639</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,14 +303,19 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/actions/commons/BasePage.java</url>
-          <line>313</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_09_Switch_Site_URL.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_09_Switch_Site_URL.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserSidebarPageObject.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testcase/jquery/cases/Level_11_DataTable.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$PROJECT_DIR$/libraries/selenium-server-4.25.0.jar!/org/openqa/selenium/support/ui/WebDriverWait.class</url>
@@ -249,6 +325,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserSidebarPageObject.java</url>
+          <line>12</line>
+          <properties class="pageObjects.nopCommerce.users.UserSidebarPageObject">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

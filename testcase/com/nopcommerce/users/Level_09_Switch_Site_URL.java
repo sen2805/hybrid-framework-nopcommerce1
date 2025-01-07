@@ -1,6 +1,7 @@
 package com.nopcommerce.users;
 
 import commons.BaseTest;
+import commons.GlobalConstants;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -8,11 +9,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.*;
-import pageObjects.admin.AdminDashboardPO;
-import pageObjects.admin.AdminLoginPO;
-import pageObjects.users.UserHomePageObject;
-import pageObjects.users.UserLoginPageObject;
-import pageObjects.users.UserRegisterPageObject;
+import pageObjects.nopCommerce.admin.AdminDashboardPO;
+import pageObjects.nopCommerce.admin.AdminLoginPO;
+import pageObjects.nopCommerce.users.UserHomePageObject;
+import pageObjects.nopCommerce.users.UserLoginPageObject;
+import pageObjects.nopCommerce.users.UserRegisterPageObject;
 
 public class Level_09_Switch_Site_URL extends BaseTest {
     //Declare  Variable
@@ -39,8 +40,8 @@ public class Level_09_Switch_Site_URL extends BaseTest {
         emailAddress = "sen" + generateRandomNumber() + "@gmail.com";
         password = "123456";
         companyName = "Kloon" ;
-        adminEmailAddress = "phamsen2805@gmail.com";
-        adminPassword ="123456";
+        adminEmailAddress = GlobalConstants.ADMIN_USERNAME;
+        adminPassword =GlobalConstants.ADMIN_PASSWORD;
         userRegisterPage = userHomePage.openRegisterPage();
         userRegisterPage.clickToMaleRadio();
         userRegisterPage.enterToFirstNameTextbox(firstName);

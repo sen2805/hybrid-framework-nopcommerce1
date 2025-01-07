@@ -7,10 +7,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.users.UserCustomerInfoPageObject;
-import pageObjects.users.UserHomePageObject;
-import pageObjects.users.UserLoginPageObject;
-import pageObjects.users.UserRegisterPageObject;
+import pageObjects.nopCommerce.users.UserCustomerInfoPageObject;
+import pageObjects.nopCommerce.users.UserHomePageObject;
+import pageObjects.nopCommerce.users.UserLoginPageObject;
+import pageObjects.nopCommerce.users.UserRegisterPageObject;
 
 public class Level_06_PageGenerator_02 extends BaseTest {
     //Declare  Variable

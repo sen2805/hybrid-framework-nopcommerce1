@@ -1,0 +1,13 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DataTable Automation" verbose="1">
+
+<parameter name="url" value ="https://blueimp.github.io/jQuery-File-Upload/"/>
+
+<test name="Run On FireFox browser">
+    <parameter name="browser" value="firefox"></parameter>
+    <classes>
+        <class name="jquery.cases.Level_12_UploadFile" />
+    </classes>
+</test>
+</suite>

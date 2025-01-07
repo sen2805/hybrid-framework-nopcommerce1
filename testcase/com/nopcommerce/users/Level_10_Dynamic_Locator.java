@@ -7,21 +7,23 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.*;
+import pageObjects.PageGenerator;
 import pageObjects.nopCommerce.users.*;
 //import pageObjects.users.*;
 
-public class Level_07_Switch_Page_Object extends BaseTest {
+public class Level_10_Dynamic_Locator extends BaseTest {
     //Declare  Variable
     private WebDriver driver;
     private UserHomePageObject homePage;
     private UserRegisterPageObject registerPage;
     private UserLoginPageObject loginPage;
+
     private UserCustomerInfoPageObject customerInfoPage;
     private UserAddressPageObject addressPage;
     private UserOrderPageObject orderPage;
     private UserRewardPointPageObject rewardPointPage;
-    private String firstName, lastName, day, month, year, emailAddress, companyName, password;
+
+    private String firstName, lastName, emailAddress, companyName, password;
 
     @Parameters("browser")
     //Pre-Condition
@@ -31,9 +33,6 @@ public class Level_07_Switch_Page_Object extends BaseTest {
         homePage = PageGenerator.getUserHomePage(driver);
         firstName = "Sen";
         lastName = "Pham";
-        day = "22" ;
-        month = "September";
-        year = "2024";
         emailAddress = "sen" + generateRandomNumber() + "@gmail.com";
         password = "123456";
         companyName = "Kloon" ;
@@ -43,6 +42,7 @@ public class Level_07_Switch_Page_Object extends BaseTest {
     @Test
     public void User_01_Register()  {
         // Action 1
+
         registerPage = homePage.openRegisterPage();
         registerPage.clickToMaleRadio();
         registerPage.enterToFirstNameTextbox(firstName);
@@ -74,23 +74,34 @@ public class Level_07_Switch_Page_Object extends BaseTest {
         Assert.assertEquals(customerInfoPage.getEmailTextboxValue(),emailAddress);
     }
     @Test
-    public void User_04_Switch_Page(){
+    public void User_04_Dynamic_Page(){
         //Customer Infor -> Address
-         addressPage = customerInfoPage.openAddressPage(driver);
-
-        //Address ->Reward Point
-        rewardPointPage = addressPage.openRewardPointPage(driver);
-
-        //Reward Point -> OrderPage
-         orderPage = rewardPointPage.openOrderPage(driver);
-
-        //Order -> Address
-          addressPage = orderPage.openAddressPage(driver);
-
-        //Address -> Customer Info
-         customerInfoPage = addressPage.openCustomerInfoPage(driver);
+        addressPage = (UserAddressPageObject) customerInfoPage.openSidebarLinkByPageName("Addresses");
+        // Addresses page -> Reward Point
+        rewardPointPage = (UserRewardPointPageObject) addressPage.openSidebarLinkByPageName("Reward points");
+        //Reward Point  -> Order
+        orderPage = (UserOrderPageObject) rewardPointPage.openSidebarLinkByPageName("Orders");
+        //Order -> Addresses
+        addressPage = (UserAddressPageObject) orderPage.openSidebarLinkByPageName("Addresses");
+        //Address -> Customer Infor
+        customerInfoPage = (UserCustomerInfoPageObject) addressPage.openSidebarLinkByPageName("Customer info");
+        rewardPointPage = (UserRewardPointPageObject) customerInfoPage.openSidebarLinkByPageName("Reward points");
+        addressPage = (UserAddressPageObject) rewardPointPage.openSidebarLinkByPageName("Addresses");
     }
-    //Post-Condition
+    @Test
+    public void User_05_Dynamic_Page(){
+        // AddressPage -> Reward point
+        addressPage.openSidebarLinkByPageNames("Reward points");
+        rewardPointPage = PageGenerator.getUserRewardPointPage(driver);
+        //Reward point -> Orders
+        rewardPointPage.openSidebarLinkByPageNames("Orders");
+        orderPage = PageGenerator.getUserOrderPage(driver);
+        //Orders -> Addresses page
+        orderPage.openSidebarLinkByPageNames("Addresses");
+        addressPage = PageGenerator.getUserAddressPage(driver);
+    }
+
+
     @AfterClass
     public void afterClass(){
         driver.quit();
