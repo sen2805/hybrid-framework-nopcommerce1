@@ -72,4 +72,9 @@ public class UserRegisterPageObject extends BasePage {
     }
 
 
+    public String getRegisterPageTitle() {
+        waitForElementClickable(driver, UserRegisterPageUI.REGISTER_PAGE_TITLE);
+        return getElementText(driver,UserRegisterPageUI.REGISTER_PAGE_TITLE);
+
+    }
 }

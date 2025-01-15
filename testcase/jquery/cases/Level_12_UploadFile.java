@@ -51,9 +51,6 @@ public class Level_12_UploadFile extends BaseTest {
         Assert.assertTrue(homePage.isFileUpLoadedByName(driver,hoian));
         Assert.assertTrue(homePage.isFileUpLoadedByName(driver,hanoi));
 
-
-
-
     }
 
     @AfterClass

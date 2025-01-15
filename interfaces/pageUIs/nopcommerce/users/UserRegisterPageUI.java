@@ -1,6 +1,7 @@
 package pageUIs.nopcommerce.users;
 
 public class UserRegisterPageUI {
+    public static final String REGISTER_PAGE_TITLE = "CSS=div.page-title>h1";
     public static final String GENDER_MALE_RADIO = "XPATH=//input[@id='gender-male']";
     public static final String FIRST_NAME_TEXTBOX = "XPath=//input[@id='FirstName']";
     public static final String LAST_NAME_TEXTBOX = "xpath=//input[@id='LastName']";
@@ -12,6 +13,7 @@ public class UserRegisterPageUI {
     public static final String REGISTER_SUCCESS_MESSAGE = "class=result";
     public static final String MY_ACCOUNT_LINK = "XPATH=//a[@class='ico-account']";
     public static final String LOGOUT_LINK ="XPATH=//a[@class='ico-logout']";
+
 
 
    // public static final String GENDER_MALE_RADIO = "//input[@id='gender-male']";

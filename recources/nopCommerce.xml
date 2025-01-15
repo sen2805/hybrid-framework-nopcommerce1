@@ -1,12 +1,15 @@
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="NopCommerce UI Automation" verbose="1">
+    <listeners>
+        <listener class-name="commons.MethodListener"></listener>
+    </listeners>
 <parameter name="userUrl" value ="http://localhost/"/>
 <parameter name="adminUrl" value ="http://localhost/login?ReturnUrl=%2Fadmin"/>
 <test name="Run On FireFox browser">
     <parameter name="browser" value="firefox"></parameter>
     <classes>
-        <class name="com.nopcommerce.users.Level_10_Dynamic_Locator" />
+        <class name="com.nopcommerce.users.Level_13_Verify" />
     </classes>
 </test>
 </suite>

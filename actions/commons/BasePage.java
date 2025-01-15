@@ -6,6 +6,8 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.Reporter;
 import pageObjects.*;
 import pageObjects.nopCommerce.users.UserAddressPageObject;
 import pageObjects.nopCommerce.users.UserCustomerInfoPageObject;
@@ -432,7 +434,6 @@ public class BasePage {
         fullFileName =fullFileName.trim();
         getElement(driver, BasePageUI.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
 
-
     }
 
     public boolean isFileLoadedByName(WebDriver driver,String fileName) {
@@ -447,26 +448,18 @@ public class BasePage {
              button.click();
              sleepInSeconds(3);
          }
-
     }
-
 
     public boolean isFileUpLoadedByName(WebDriver driver,String fileName) {
         waitForElementVisible(driver, HomePageUI.FILE_UPLOADED_SUCCESS_BY_FILE_NAME,fileName);
         return isElementDisplayed(driver, HomePageUI.FILE_UPLOADED_SUCCESS_BY_FILE_NAME,fileName);
     }
 
-
-
-
-
     public UserCustomerInfoPageObject openAccountPage(WebDriver driver) {
         waitForElementClickable(driver, UserHomePageUI.MY_ACCOUNT_LINK);
         clickToElement(driver, UserHomePageUI.MY_ACCOUNT_LINK);
         return PageGenerator.getUserCustomerPage(driver);
     }
-
-
 
     public UserCustomerInfoPageObject openCustomInfoPage(WebDriver driver) {
         waitForElementVisible(driver, UserHomePageUI.MY_ACCOUNT_LINK);
@@ -485,12 +478,10 @@ public class BasePage {
         return PageGenerator.getUserCustomerPage(driver);
     }
 
-
     public UserAddressPageObject openAddressPage(WebDriver driver) {
         waitForElementClickable(driver, UserSideBarPageUI.ADDRESS_LINK);
         clickToElement(driver, UserSideBarPageUI.ADDRESS_LINK);
         return PageGenerator.getUserAddressPage(driver);
-
     }
 
     public UserOrderPageObject openOrderPage(WebDriver driver) {
