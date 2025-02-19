@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/testcase" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/javaTester" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javaSDET" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/reportConfigs" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -25,5 +26,9 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="log4j2" level="project" />
+    <orderEntry type="library" name="reportNG" level="project" />
+    <orderEntry type="library" name="extentreports-5.1.2" level="project" />
+    <orderEntry type="library" name="ReportTestNG" level="project" />
   </component>
 </module>

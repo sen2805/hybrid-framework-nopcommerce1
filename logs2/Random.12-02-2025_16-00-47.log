@@ -1,0 +1,12 @@
+[12-02-2025 16:01:10.063 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 01: Open Register Page
+[12-02-2025 16:01:11.581 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 02: Click to Male radio button
+[12-02-2025 16:01:11.832 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 03: Enter To FirstName textbox with valueSen
+[12-02-2025 16:01:11.905 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 04: Enter To Lastname textbox with valuePham
+[12-02-2025 16:01:11.951 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 05: Enter To Email Address textbox with valuesen5959@gmail.com
+[12-02-2025 16:01:11.992 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 06: Enter To Company textbox with valueKloon
+[12-02-2025 16:01:12.027 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 07: Enter To password with value123456
+[12-02-2025 16:01:12.068 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 08: Enter To Confirm password with value123456
+[12-02-2025 16:01:12.116 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 09: Click button Login
+[12-02-2025 16:01:12.913 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 10: Verify msg: Your registration completed
+[12-02-2025 16:01:12.937 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 11: Open Page Customer Info
+[12-02-2025 16:01:14.155 INFO com.nopcommerce.users.Level_14_Log4J] - User_01_Register - STEP 12:Logout system

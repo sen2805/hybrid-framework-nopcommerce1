@@ -4,21 +4,118 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="Topic 75 Switch URL">
-      <change afterPath="$PROJECT_DIR$/actions/commons/MethodListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/commons/VerificationFailures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaSDET/TestNG_01_Hard_Assert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaSDET/TestNG_02_Soft_Assert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_13_Assert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_13_Verify.java" afterDir="false" />
+    <list default="true" id="5f293244-a996-4fe1-892c-831d571a5e56" name="Changes" comment="Assert And Verify">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/extentreports_5_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/reportNG.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log4JVersion2/log4j-api-2.23.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log4JVersion2/log4j-core-2.23.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/reportConfig/ExtentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/reportConfig/ExtentTestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlExtent/ExtentReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent2/bson-3.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent2/extentreports-2.41.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent2/freemarker-2.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent2/jsoup-1.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent2/mongodb-driver-3.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent2/mongodb-driver-core-3.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent2/sqlite-jdbc-3.8.11.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent2/testng-6.9.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/bsh-2.0b4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/bson-3.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/extentreports-3.1.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/freemarker-2.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/gson-2.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/httpclient-4.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/httpcore-4.4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/httpmime-4.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/jcommander-1.48.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/jsoup-1.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/mongodb-driver-3.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/mongodb-driver-core-3.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent3/testng-6.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/bsh-2.0b4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/bson-3.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/extentreports-4.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/freemarker-2.3.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/gson-2.8.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/httpclient-4.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/httpcore-4.4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/httpmime-4.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/jcommander-1.48.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/mongodb-driver-3.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/mongodb-driver-core-3.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent4/testng-6.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent5/extentreports-5.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent5/freemarker-2.3.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent5/gson-2.10.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent5/lombok-1.18.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent5/reactive-streams-1.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libExtent5/rxjava-3.1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libLog4J1/commons-codec-1.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libLog4J1/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libLog4J1/commons-lang3-3.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libLog4J1/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libLog4J1/log4j-1.2.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libReportNG/commons-collections-3.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libReportNG/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libReportNG/guice-3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libReportNG/reportng-1.1.4-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libReportNG/reportng-1.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libReportNG/velocity-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/commons-logging-1.3.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/NopCommerce.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/NopCommerce.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Fixed.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.12-02-2025_16-00-47.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.12-02-2025_16-53-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.12-02-2025_17-10-00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.17-02-2025_13-28-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.17-02-2025_13-45-26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.17-02-2025_13-59-59.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_13-43-01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_14-08-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_14-59-39.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_15-00-42.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_15-04-32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_15-06-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_15-08-46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_15-38-28.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.18-02-2025_16-09-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.19-02-2025_11-12-42.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.19-02-2025_11-17-13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.19-02-2025_11-17-40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.19-02-2025_15-15-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs2/Random.19-02-2025_15-20-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recources/log4j.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recources/log4j2a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/reportng.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/reportng.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/sorttable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/suite1_test2_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/html/suites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/xml/com.nopcommerce.users.Level_14_Log4J_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/xml/com.nopcommerce.users.Level_15_ExtentReportV2_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/xml/com.nopcommerce.users.Level_15_ExtentReport_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_14_Log4J.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/com/nopcommerce/users/Level_15_ExtentReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserRegisterPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopCommerce/users/UserRegisterPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/commons/GlobalConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/GlobalConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/reportConfig/ExtentListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/reportConfig/MailConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hybrid-framework-nopcommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hybrid-framework-nopcommerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserRegisterPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/nopcommerce/users/UserRegisterPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recources/nopCommerce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recources/nopCommerce.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/jquery/cases/Level_12_UploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/jquery/cases/Level_12_UploadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +183,12 @@
     "TestNG.Level_10_Dynamic_Locator.User_04_Dynamic_Page.executor": "Run",
     "TestNG.Level_11_DataTable.Table_04_Action_By_Index.executor": "Run",
     "TestNG.Level_11_DataTable.executor": "Run",
+    "TestNG.Run With ReportNG.executor": "Run",
     "TestNG.TestNG_02_Soft_Assert.TC_01_Login_Empty_Email_Password.executor": "Run",
     "git-widget-placeholder": "master",
     "java.suggest.annotation.dependency": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources",
+    "last_opened_file_path": "C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/libraries/commons-logging-1.3.5.jar",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.2046875",
     "project.structure.side.proportion": "0.2",
@@ -103,11 +201,11 @@
       <recent name="D:\Selenium2024\03-Java Hybrid Framework\hybrid-framework-nopcommerce\libraries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\.idea" />
-      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\datatest" />
-      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\" />
-      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\browserLogs" />
-      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\browserExtensions" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\libExtentV5" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\libExtent4" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\libExtent3" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\libExtent2" />
+      <recent name="C:\Users\admin\IdeaProjects\hybrid-framework-nopcommerce1\libReportNG" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nopcommerce.users" />
@@ -117,68 +215,33 @@
       <recent name="pageFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/nopCommerce.xml">
-    <configuration name="C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/nopCommerce.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Run With ReportNG" type="TestNG" temporary="true">
       <module name="hybrid-framework-nopcommerce" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/recources/nopCommerce.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/uploadFile.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hybrid-framework-nopcommerce" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/recources/uploadFile.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNG_01_Hard_Assert" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hybrid-framework-nopcommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNG_01_Hard_Assert" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNG_02_Soft_Assert" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hybrid-framework-nopcommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNG_02_Soft_Assert" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNG_02_Soft_Assert.TC_01_Login_Empty_Email_Password" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hybrid-framework-nopcommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNG_02_Soft_Assert" />
-      <option name="METHOD_NAME" value="TC_01_Login_Empty_Email_Password" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <listeners>
+        <listener class="commons.MethodListener" />
+        <listener class="org.uncommons.reportng.HTMLReporter" />
+        <listener class="org.uncommons.reportng.JUnitXMLReporter" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/nopCommerce.xml" />
-        <item itemvalue="TestNG.TestNG_02_Soft_Assert" />
-        <item itemvalue="TestNG.TestNG_01_Hard_Assert" />
-        <item itemvalue="TestNG.TestNG_02_Soft_Assert.TC_01_Login_Empty_Email_Password" />
-        <item itemvalue="TestNG.C:/Users/admin/IdeaProjects/hybrid-framework-nopcommerce1/recources/uploadFile.xml" />
+        <item itemvalue="TestNG.Run With ReportNG" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736236940944</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Assert And Verify">
+      <option name="closed" value="true" />
+      <created>1736930813561</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736930813561</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,7 +321,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="initial commit 1" />
     <MESSAGE value="Topic 75 Switch URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Topic 75 Switch URL" />
+    <MESSAGE value="Assert And Verify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assert And Verify" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
