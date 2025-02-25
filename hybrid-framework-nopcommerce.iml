@@ -30,5 +30,6 @@
     <orderEntry type="library" name="reportNG" level="project" />
     <orderEntry type="library" name="extentreports-5.1.2" level="project" />
     <orderEntry type="library" name="ReportTestNG" level="project" />
+    <orderEntry type="library" name="Alllure" level="project" />
   </component>
 </module>
