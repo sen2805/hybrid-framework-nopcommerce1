@@ -2,6 +2,9 @@ package com.nopcommerce.users;
 
 import com.aventstack.extentreports.Status;
 import commons.BaseTest;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -43,8 +46,8 @@ public class Level_16_AllureReport extends BaseTest {
         password = "123456";
         companyName = "Kloon" ;
     }
-
-    //Testcases
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Register To application")
     @Test
     public void User_01_Register()  {
 
@@ -61,7 +64,7 @@ public class Level_16_AllureReport extends BaseTest {
         registerPage.openCustomerInfoPage();
         registerPage.logOutSystem();
     }
-
+    @Description("Login To application")
     @Test
     public void User_02_Login(){
 
@@ -70,6 +73,8 @@ public class Level_16_AllureReport extends BaseTest {
         PageGenerator.getUserHomePage(driver);
         Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
     }
+    @Description("Verify page Account")
+    @Severity(SeverityLevel.NORMAL)
     @Test
     public  void User_03_MyAccount(){
 
